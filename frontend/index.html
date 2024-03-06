@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseBuddy - Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>ExpenseBuddy - Expense Tracker</h1>
+
+    <form id="expenseForm">
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required><br>
+
+        <label for="categories">Categories:</label>
+        <input type="text" id="categories" name="categories" required><br>
+
+        <label for="account">Account:</label>
+        <input type="radio" id="idbi" name="account" value="idbi" required>
+        <label for="idbi">IDBI</label>
+        <input type="radio" id="hdfc" name="account" value="hdfc" required>
+        <label for="hdfc">HDFC</label>
+        <input type="radio" id="cash" name="account" value="cash" required>
+        <label for="cash">Cash</label><br>
+
+        <label for="debitCredit">Debit/Credit:</label>
+        <input type="radio" id="debit" name="debitCredit" value="debit" required>
+        <label for="debit">Debit</label>
+        <input type="radio" id="credit" name="debitCredit" value="credit" required>
+        <label for="credit">Credit</label><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
