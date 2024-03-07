@@ -6,7 +6,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 app = Flask(__name__)
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-SPREADSHEET_ID = 'YOUR_SPREADSHEET_ID'
+SPREADSHEET_ID = '1QFBuMsR0E2xom3nQAY3F-xqncGVC4vWFihWbWSe0AD8'
 
 @app.route('/')
 def index():
@@ -19,7 +19,7 @@ def submit_expense():
 
         creds = None
         token_path = 'token.json'
-        credentials_path = 'credentials.json'
+        credentials_path = 'ExpenseBuddy.json'
 
         if os.path.exists(token_path):
             creds = Credentials.from_authorized_user_file(token_path)
